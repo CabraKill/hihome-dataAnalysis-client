@@ -29,8 +29,8 @@ def main():
                 token = login(use_cache = False)
             except Exception as e:
                 print("Error: {}".format(e))
-            if(changed):
-                time.sleep(2)   
+            # if(changed):
+            #     time.sleep(2)   
 
 
 if __name__ == '__main__':
