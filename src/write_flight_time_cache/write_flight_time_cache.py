@@ -9,7 +9,7 @@ def writeFlightTime(flightList: List):
 def writeFlightHour(flightList: List):
     with open("flightTime-hour.txt", "w") as f:
         for flight in flightList:
-            formattedDate = flight.date.strftime("%H:%M:%S")
+            formattedDate = flight.date.strftime("%H:%M:%S:%f")
             f.write(formattedDate + "\n")
 
 def writeFlightTotal(flightList: List):
