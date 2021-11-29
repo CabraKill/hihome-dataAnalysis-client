@@ -7,7 +7,7 @@ def send_value_to_ip(ip: str, value: str):
     response = requests.get(f'http://{ip}/RELAY={value.upper()}')
     flightTime = (time.time() - start) * 1000
     flightTimeString = str(flightTime)
-    print(f'Flight time: {flightTimeString}')
+    print(f'Flight time request: {flightTimeString}')
     if response.status_code == 200:
         print(f'{value} sent to {ip}')
     else:
